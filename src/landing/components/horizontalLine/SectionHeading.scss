@@ -1,0 +1,27 @@
+section.hor-line-heading {
+  overflow: hidden;
+  text-align: center;
+  color: #111111;
+  line-height: 34px;
+  font-size: 28px;
+  font-family: "AmazonEmber-Regular";
+  background: #ffffff;
+  &:before,
+  &:after {
+    background-color: #000000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  &:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  &:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+}
